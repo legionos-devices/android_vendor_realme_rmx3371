@@ -18619,6 +18619,43 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.oplus.hardware.performance-V1-ndk_platform",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/odm/lib/vendor.oplus.hardware.performance-V1-ndk_platform.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "anc.hal",
     owner: "realme",
     strip: {
@@ -24025,59 +24062,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.performance-V1-ndk_platform",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.performance@1.0",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/vendor.oplus.hardware.performance@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.oplus.hardware.radio@1.0",
     owner: "realme",
     strip: {
@@ -26810,6 +26794,7 @@ cc_prebuilt_binary {
                 "proprietary/system_ext/bin/wfdservice",
             ],
             shared_libs: [
+                "libwfdservice_shim",
                 "liblog",
                 "libutils",
                 "libcutils",

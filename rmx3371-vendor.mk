@@ -2285,6 +2285,7 @@ PRODUCT_PACKAGES += \
     libosie_process \
     libosie_stub \
     vendor.oplus.hardware.orms@1.0 \
+    vendor.oplus.hardware.performance-V1-ndk_platform \
     anc.hal \
     android.hardware.secure_element@1.0-impl \
     com.qti.sensor.hi846 \
@@ -2481,8 +2482,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.oplusSensor@1.0 \
     vendor.oplus.hardware.osense.client-V1-ndk_platform_odm \
     vendor.oplus.hardware.osense.client@1.0 \
-    vendor.oplus.hardware.performance-V1-ndk_platform \
-    vendor.oplus.hardware.performance@1.0 \
     vendor.oplus.hardware.radio@1.0 \
     vendor.pixelworks.hardware.display@1.0 \
     vendor.pixelworks.hardware.display@1.1 \
