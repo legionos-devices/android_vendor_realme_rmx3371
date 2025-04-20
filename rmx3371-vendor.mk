@@ -1595,6 +1595,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/rmx3371/proprietary/vendor/etc/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml \
     vendor/realme/rmx3371/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
     vendor/realme/rmx3371/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
+    vendor/realme/rmx3371/proprietary/vendor/etc/perf/commonsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonsysnodesconfigs.xml \
     vendor/realme/rmx3371/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
     vendor/realme/rmx3371/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
     vendor/realme/rmx3371/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
@@ -1971,6 +1972,7 @@ PRODUCT_PACKAGES += \
     libQTEEConnector_vendor \
     libSecureUILib \
     libStDrvInt \
+    libadaptlaunch \
     libadsp_default_listener \
     libaoa \
     libasn1cper \
@@ -2041,6 +2043,7 @@ PRODUCT_PACKAGES += \
     liblowi_wifihal \
     liblqe \
     libmdmimgload \
+    libmeters-ns \
     libmeters \
     libmidasserviceintf \
     libmidasserviceintf_aidl \
@@ -2073,6 +2076,7 @@ PRODUCT_PACKAGES += \
     libqrtr \
     libqseed3 \
     libqsocket \
+    libqti-utils \
     libqtikeymaster4 \
     librcc \
     libril-qc-hal-qmi \
@@ -2285,6 +2289,7 @@ PRODUCT_PACKAGES += \
     libosie_process \
     libosie_stub \
     vendor.oplus.hardware.orms@1.0 \
+    vendor.oplus.hardware.performance-V1-ndk_platform \
     anc.hal \
     android.hardware.secure_element@1.0-impl \
     com.qti.sensor.hi846 \
@@ -2481,8 +2486,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.oplusSensor@1.0 \
     vendor.oplus.hardware.osense.client-V1-ndk_platform_odm \
     vendor.oplus.hardware.osense.client@1.0 \
-    vendor.oplus.hardware.performance-V1-ndk_platform \
-    vendor.oplus.hardware.performance@1.0 \
     vendor.oplus.hardware.radio@1.0 \
     vendor.pixelworks.hardware.display@1.0 \
     vendor.pixelworks.hardware.display@1.1 \
